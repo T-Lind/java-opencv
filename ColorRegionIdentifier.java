@@ -77,7 +77,7 @@ public class ColorRegionIdentifier extends OpenCvPipeline{
 
         for(int r=frameHeight/8;r<frameHeight/2;r++){
             for(int c=frameWidth/8;c<frameWidth/5;c++){
-                pixelRegionAverage += copyInput.get(r,c)[2]; // R-0 G-1 B-2
+                pixelRegionAverage += copyInput.get(r,c)[0]; // R-0 G-1 B-2
             }
         }
 
